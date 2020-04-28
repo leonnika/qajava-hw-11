@@ -63,7 +63,7 @@
                         </rule>
                     </rules>
                     <excludes>
-                        <exclude>ru/netology/domain/*.class </exclude>
+                        <exclude>ru/netology/repository/*.class </exclude>
 
                     </excludes>
                 </configuration>

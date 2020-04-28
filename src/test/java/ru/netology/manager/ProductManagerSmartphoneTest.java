@@ -9,16 +9,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ProductManagerSmartphoneTest {
     private Smartphone firstSmartphone = new Smartphone(1,"iPhone8.0", 20000, "Apple");
-    private Smartphone secondSmartphone;
-    private Smartphone thirdSmartphone;
-    private Smartphone fourthSmartphone;
+    private Smartphone secondSmartphone =new Smartphone(2, "iPhone SE", 40000, "Apple");;
+    private Smartphone thirdSmartphone= new Smartphone(3, "iPhone 11", 100000, "Apple");;
+    private Smartphone fourthSmartphone= new Smartphone(4, "Samsung Galaxy A50", 25000, "Samsung");;
 
 
     @Test
     void searcyBySmartphoneName() {
-        secondSmartphone = new Smartphone(2, "iPhone SE", 40000, "Apple");
-        thirdSmartphone = new Smartphone(3, "iPhone 11", 100000, "Apple");
-        fourthSmartphone = new Smartphone(4, "Samsung Galaxy A50", 25000, "Samsung");
         ProductRepository repository = new ProductRepository();
         ProductManager manager = new ProductManager(repository);
         manager.AddPoduct(firstSmartphone);
@@ -32,9 +29,6 @@ class ProductManagerSmartphoneTest {
 
     @Test
     void searcyBySmartphoneProducer() {
-        secondSmartphone = new Smartphone(2, "iPhone SE", 40000, "Apple");
-        thirdSmartphone = new Smartphone(3, "iPhone 11", 100000, "Apple");
-        fourthSmartphone = new Smartphone(4, "Samsung Galaxy A50", 25000, "Samsung");
         ProductRepository repository = new ProductRepository();
         ProductManager manager = new ProductManager(repository);
         manager.AddPoduct(firstSmartphone);
@@ -48,9 +42,6 @@ class ProductManagerSmartphoneTest {
 
     @Test
     void searcyBySmartphoneNoСoincidence() {
-        secondSmartphone = new Smartphone(2, "iPhone SE", 40000, "Apple");
-        thirdSmartphone = new Smartphone(3, "iPhone 11", 100000, "Apple");
-        fourthSmartphone = new Smartphone(4, "Samsung Galaxy A50", 25000, "Samsung");
         ProductRepository repository = new ProductRepository();
         ProductManager manager = new ProductManager(repository);
         manager.AddPoduct(firstSmartphone);
