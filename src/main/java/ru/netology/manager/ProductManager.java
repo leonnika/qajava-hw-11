@@ -12,6 +12,10 @@ public class ProductManager {
         this.repository = repository;
     }
 
+    public void remById(int id){
+        repository.removeById(id);
+    }
+
     public void AddPoduct(Product product) {
         repository.save(product);
     }
