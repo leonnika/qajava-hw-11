@@ -2,11 +2,8 @@ package ru.netology.domain;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
 
-@Setter
-@Getter
+@Data
 @EqualsAndHashCode(callSuper = true)
 public class Book extends Product {
     private String author;
@@ -24,7 +21,7 @@ public class Book extends Product {
         if (super.matches(search)) {
             return true;
         }
-        if (author.equalsIgnoreCase(search)){
+        if (author.equalsIgnoreCase(search)) {
             return true;
         }
         return false;

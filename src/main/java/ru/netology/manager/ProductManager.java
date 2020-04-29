@@ -9,9 +9,11 @@ public class ProductManager {
     public ProductManager() {
 
     }
-public void remById(int id){
+
+    public void remById(int id) {
         repository.removeById(id);
-}
+    }
+
     public ProductManager(ProductRepository repository) {
         this.repository = repository;
     }
