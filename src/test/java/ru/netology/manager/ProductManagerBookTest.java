@@ -47,7 +47,6 @@ class ProductManagerBookTest {
     void shouldSearcyByBookNoСoincidence() {
         Book[] returned = new Book[]{firstBook, secondBook, thirdBook, fourthBook};
         doReturn(returned).when(repository).findAll();
-        manager.remById(1);
         Product[] actual = manager.searcyBy("Отцы и дети");
         Product[] expected = new Book[]{};
         assertArrayEquals(expected, actual);
