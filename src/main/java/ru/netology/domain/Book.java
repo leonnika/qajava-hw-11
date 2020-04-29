@@ -2,8 +2,11 @@ package ru.netology.domain;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Setter
+@Getter
 @EqualsAndHashCode(callSuper = true)
 public class Book extends Product {
     private String author;
