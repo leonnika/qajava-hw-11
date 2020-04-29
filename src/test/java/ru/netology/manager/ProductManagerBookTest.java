@@ -53,6 +53,7 @@ class ProductManagerBookTest {
         manager.AddPoduct(secondBook);
         manager.AddPoduct(thirdBook);
         manager.AddPoduct(fourthBook);
+        manager.remById(1);
         Product[] actual = manager.searcyBy("Отцы и дети");
         Product[] expected = new Book[]{};
         assertArrayEquals(expected, actual);
