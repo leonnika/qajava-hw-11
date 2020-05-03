@@ -7,8 +7,8 @@ import ru.netology.domain.Product;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProductRepositoryTest {
-    private Book firstBook = new Book(1, "Война и мир.том1", 1000, "Л.Н.Толстой", 5000, 2000);
-    private Book secondBook = new Book(2, "Война и мир.том2", 1000, "Л.Н.Толстой", 5000, 2000);
+    private Book firstBook = new Book(1, "Война и мир.том1", 1000, "Л.Н.Толстой");
+    private Book secondBook = new Book(2, "Война и мир.том2", 1000, "Л.Н.Толстой");
     ProductRepository repository = new ProductRepository();
     @Test
     void shouldCheckMetodsRepositiry() {

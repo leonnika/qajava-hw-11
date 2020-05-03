@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BookTest {
-    Book book = new Book(1, "Война и мир.том1", 1000, "Л.Н.Толстой", 5000, 2000);
+    Book book = new Book(1, "Война и мир.том1", 1000, "Л.Н.Толстой");
 
     @Test
     void ShouldMatchesBookAutor() {
