@@ -18,7 +18,7 @@ public class ProductManager {
         this.repository = repository;
     }
 
-    public void AddPoduct(Product product) {
+    public void addPoduct(Product product) {
         repository.save(product);
     }
 
