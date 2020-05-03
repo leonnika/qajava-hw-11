@@ -10,10 +10,10 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class ProductManagerBookTest {
 
-    private Book firstBook= new Book(1, "Война и мир.том1", 1000, "Л.Н.Толстой", 5000, 2000);
-    private Book secondBook= new Book(2, "Война и мир.том2", 1000, "Л.Н.Толстой", 5000, 2000);
-    private Book thirdBook = new Book(3, "Война и мир.том3", 1000, "Л.Н.Толстой", 5000, 2000);
-    private Book fourthBook= new Book(4, "Война и мир.том4", 1000, "Л.Н.Толстой", 5000, 2000);
+    private Book firstBook= new Book(1, "Война и мир.том1", 1000, "Л.Н.Толстой");
+    private Book secondBook= new Book(2, "Война и мир.том2", 1000, "Л.Н.Толстой");
+    private Book thirdBook = new Book(3, "Война и мир.том3", 1000, "Л.Н.Толстой");
+    private Book fourthBook= new Book(4, "Война и мир.том4", 1000, "Л.Н.Толстой");
 
     @BeforeEach
     void init() {
