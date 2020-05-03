@@ -16,7 +16,7 @@ public class ProductManager {
         repository.removeById(id);
     }
 
-    public void AddPoduct(Product product) {
+    public void addPoduct(Product product) {
         repository.save(product);
     }
 
