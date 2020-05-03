@@ -2,36 +2,29 @@ package ru.netology.domain;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class BookTest {
     Book book = new Book(1, "Война и мир.том1", 1000, "Л.Н.Толстой");
 
     @Test
-    void ShouldMatchesBookAutor() {
-        boolean actual = book.matches("Л.Н.Толстой");
-        boolean expected = true;
-        assertEquals(expected, actual);
+    void shouldMatchesBookAutor() {
+        assertTrue(book.matches("Л.Н.Толстой"));
     }
 
     @Test
-    void ShouldMatchesBookAutorNoСoincidence() {
-        boolean actual = book.matches("А.С.Пушкин");
-        boolean expected =  false;
-        assertEquals(expected, actual);
+    void shouldMatchesBookAutorNoСoincidence() {
+        assertFalse(book.matches("А.С.Пушкин"));
     }
 
     @Test
-    void ShouldMatchesBookNameNoСoincidence() {
-        boolean actual = book.matches("Война и мир");
-        boolean expected = false;
-        assertEquals(expected, actual);
+    void shouldMatchesBookNameNoСoincidence() {
+        assertFalse(book.matches("Война и мир"));
     }
 
     @Test
-    void ShouldMatchesBookName() {
-        boolean actual = book.matches("Война и мир.том1");
-        boolean expected = true;
-        assertEquals(expected, actual);
+    void shouldMatchesBookName() {
+        assertTrue(book.matches("Война и мир.том1"));
     }
 }
